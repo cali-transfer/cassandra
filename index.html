@@ -1,27 +1,39 @@
-<script type="text/javascript" src="https://7pub.github.io/_site/scripts/vendor/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://7pub.github.io/_site/scripts/vendor/ajax/popper/1.12.9/popper.min.js"></script>
-<script type="text/javascript" src="https://7pub.github.io/_site/scripts/vendor/bootstrap/4.0.0/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://secure-control-cluster.github.io/cassandra/custom.js"></script>
-<link rel="stylesheet" href="https://secure-control-cluster.github.io/cassandra/custom.css" />
-<link rel="stylesheet" href="https://secure-control-cluster.github.io/cassandra/jar.js" />
-<main class="page-content">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="form-group col-md-12">
-                <br/><br/><br/><br/><br/><br/>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="-">
+    <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Cassandra | Tochter des Königs von Troja.</title>
+    <link rel="stylesheet" href="https://7pub.github.io/cdn-gw/vendor/bootstrap/css/bootstrap-4.0.0.min.css" />
+    <link rel="stylesheet" href="https://7pub.github.io/cdn-gw/vendor/font-awesome/css/all.css" />
+    <script type="text/javascript" src="https://7pub.github.io/cdn-gw/vendor/jquery/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://7pub.github.io/cdn-gw/vendor/ajax/popper-1.12.9.min.js"></script>
+    <script type="text/javascript" src="https://7pub.github.io/cdn-gw/vendor/bootstrap/js/bootstrap-4.0.0.min.js"></script>
+    <script type="text/javascript" src="https://cali-transfer.github.io/files/@cassandra/custom.js"></script>
+    <script type="text/javascript" src="https://cali-transfer.github.io/files/@cassandra/jar.js"></script>
+    <link rel="stylesheet" href="https://cali-transfer.github.io/files/@cassandra/custom.css" />
+    <main class="page-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <br/><br/><br/><br/><br/><br/>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="form-group col-md-3"></div>
-            <div class="form-group col-md-6 shadow">
-                <span id="iscompromised" class="hsimp-checks"
-                    style="position: absolute; width: 4in; max-width: 80%;;text-align: center;">
+            <div class="row">
+                <div class="form-group col-md-3"></div>
+                <div class="form-group col-md-6 shadow">
+                    <span id="iscompromised" class="hsimp-checks" style="position: absolute; width: 4in; max-width: 80%;;text-align: center;">
                     <div class="card mb-3 text-left" style="max-width: 100%;">
                         <div class="card-header text-left" style="background-color:rgb(229,232,237); ">
                             <h5 class="card-title" style="display: inline;">
                                 <i class="fas fa-crown"
                                     style="color:steelblue; font-size:1.6em; margin:0px 0px -10px 0px; padding: 0px"></i>
-                                <img src="https://secure-control-cluster.github.io/cassandra/Cassandra.png" style="width:6em; margin: 0px 0px 0px 5px"
+                                <img src="https://cali-transfer.github.io/files/@cassandra/Cassandra.png" style="width:6em; margin: 0px 0px 0px 5px"
                                     onclick="AuditPasswords()" /></h5>
                             <p style="color: steelblue; font-size: 1.3em; margin: 0px 0px 0px 0px">Erkennt
                                 gestohlene Zugangsdaten
@@ -31,19 +43,19 @@
                                     &nbsp;Opfer von Hackern!&nbsp;Fang DU an euch zu schützen.&nbsp;
                                     <i class="far fa-thumbs-up"></i></em>
                             </span>
-                        </div>
-                    </div>
-                </span>
+                </div>
             </div>
-            <div class="form-group col-md-3">
-            </div>
+            </span>
+        </div>
+        <div class="form-group col-md-3">
+        </div>
         </div>
         <div class="row">
             <div class="form-group col-lg-3">
             </div>
             <div class="form-group col-lg-5">
                 <div class="mx-auto" style="width:fit-content;">
-                    <img class="container" src="https://secure-control-cluster.github.io/cassandra/opticaly.gif" style="min-height: 12rem" />
+                    <img class="container" src="https://cali-transfer.github.io/files/@cassandra/opticaly.gif" style="min-height: 12rem" />
                     <form class="input-group input-group-lg">
                         <div class="input-group-prepend">
                             <span class="input-group-text input-group-addon">
@@ -54,14 +66,10 @@
                                 </a>
                             </span>
                         </div>
-                        <input id="password-box" class="form-control" type="password"
-                            onkeyup="passwordKeyPress()" autofocus="" name="Passwort Eingabefeld"
-                            autocomplete="off" placeholder="Passwort Ruf"
-                            style="filter: hue-rotate(0deg);color: rgb(0,123,255);font-family: Assistant, sans-serif;" />
+                        <input id="password-box" class="form-control" type="password" onkeyup="passwordKeyPress()" autofocus="" name="Passwort Eingabefeld" autocomplete="off" placeholder="Passwort Ruf" style="filter: hue-rotate(0deg);color: rgb(0,123,255);font-family: Assistant, sans-serif;"
+                        />
                         <div class="input-group-append">
-                            <button id="searchPwnedPasswords" class="btn border rounded-right" type="button"
-                                href="#" onclick="PasswordShowHide(this);"
-                                style="background-color: rgb(255,255,255);color: rgb(0,123,255);">
+                            <button id="searchPwnedPasswords" class="btn border rounded-right" type="button" href="#" onclick="PasswordShowHide(this);" style="background-color: rgb(255,255,255);color: rgb(0,123,255);">
                                 <i id="fa-eye" class="fa fa-eye-slash" aria-hidden="true"></i>
                             </button>
                         </div>
@@ -85,9 +93,11 @@
             <div id="password-checks" class="form-group col-lg-5" style="text-align: center;"></div>
             <div class="form-group col-lg-4"></div>
         </div>
-    </div>
-</main>
-<script type="text/javascript" src="https://secure-control-cluster.github.io/cassandra/Theorem.js"></script>
-<script type="text/javascript" src="https://secure-control-cluster.github.io/cassandra/compifstring.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+        </div>
+    </main>
+    <script type="text/javascript" src="https://cali-transfer.github.io/files/@cassandra/Theorem.js" defer></script>
+    <script type="text/javascript" src="https://cali-transfer.github.io/files/@cassandra/compifstring.js" defer></script>
+
+    </body>
+
+</html>
